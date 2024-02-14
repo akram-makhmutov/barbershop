@@ -21,7 +21,7 @@ const Home = ({mine_data}: Props) => {
                         WELCOME TO
                     </div>
                     <div className={styles.barbershop}>
-                        Barbershop in <br/> Manhattan!
+                        Barbershop in <br/> Manhattan
                     </div>
                     <div className={styles.york}>
                         NEW YORK
