@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: local('Poppins-Regular'), url(../global/assets/fonts/Poppins-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: local('Poppins-Bold'), url(../global/assets/fonts/Poppins-Bold.woff) format('woff');
+}
+
+@font-face {
+
+    font-family: Poppins-ExtraBold;
+    src: local('Poppins-ExtraBold'), url(../global/assets/fonts/Poppins-ExtraBold.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+}
