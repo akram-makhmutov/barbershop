@@ -1,6 +1,6 @@
 export type service_data = {
     id: number;
-    name: string
+    name: string;
 }
 
 export const service_data = [
