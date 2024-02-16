@@ -1,0 +1,37 @@
+.choose {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  .headerChoose {
+    font-size: 62px;
+    color: white;
+    font-family: Poppins-ExtraBold, sans-serif;
+  }
+
+  .paragraphChoose {
+    font-size: 24px;
+    color: white;
+    font-family: Poppins-SemiBold, sans-serif;
+  }
+
+  .listChoose {
+    font-size: 24px;
+    color: white;
+    font-family: Poppins-Light, sans-serif;
+  }
+
+  .rectangleChoose {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+  }
+
+  img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+}
