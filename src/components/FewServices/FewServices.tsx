@@ -13,10 +13,10 @@ const FewServices = () => {
     const imageWoman = '../../../global/assets/images/woman.svg';
     return (
         <div className={styles.fewServices}>
-            <OneService image={imageScissors} service_data={[service_1]} />
-            <OneService image={imageBeard} service_data={[service_2]} />
-            <OneService image={imageShaver} service_data={[service_3]} />
-            <OneService image={imageWoman} service_data={[service_4]} />
+            <OneService image={imageScissors} list={[service_1]} />
+            <OneService image={imageBeard} list={[service_2]} />
+            <OneService image={imageShaver} list={[service_3]} />
+            <OneService image={imageWoman} list={[service_4]} />
         </div>
     );
 }

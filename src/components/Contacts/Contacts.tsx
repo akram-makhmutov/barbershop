@@ -3,7 +3,7 @@ import geotag from '../../../global/assets/images/geotag.svg'
 import phone from '../../../global/assets/images/phone.svg'
 
 interface Props {
-    list: { id: number, street: string, city: string, index: string, phone: string }[];
+    list: {id: number, street: string, city: string, index: string, phone: string }[];
 }
 
 const Contacts = ({list}: Props) => {

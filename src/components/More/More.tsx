@@ -2,7 +2,7 @@ import styles from './More.module.scss'
 
 const More = () => {
     return (
-        <div className={styles.button}>More</div>
+        <div className={styles.buttonMore}>MORE</div>
     );
 }
 
