@@ -9,19 +9,16 @@
 }
 
 @font-face {
-
     font-family: Poppins-ExtraBold;
     src: local('Poppins-ExtraBold'), url(../global/assets/fonts/Poppins-ExtraBold.woff) format('woff');
 }
 
 @font-face {
-
     font-family: Poppins-SemiBold;
     src: local('Poppins-SemiBold'), url(../global/assets/fonts/Poppins-SemiBold.woff) format('woff');
 }
 
 @font-face {
-
     font-family: Poppins-Light;
     src: local('Poppins-Light'), url(../global/assets/fonts/Poppins-Light.woff) format('woff');
 }

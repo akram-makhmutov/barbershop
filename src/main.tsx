@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './components/Header/Header.tsx'
 import Home from './components/Home/Home.tsx'
-import FewServices from "./components/FewServices/FewServices"
-import {Choose} from "./components/Choose/Choose"
+import FewServices from "./components/FewServices/FewServices.tsx"
+import Choose from "./components/Choose/Choose.tsx"
 import './index.css'
 import '../global/assets/styles/reset.css'
 import '../global/assets/styles/global.scss'

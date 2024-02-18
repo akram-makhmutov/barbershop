@@ -1,8 +1,9 @@
 import styles from './Choose.module.scss'
 import choose from '../../../global/assets/images/choose.svg'
 
-export const Choose = () => {
+const Choose = () => {
     return (
+        <div className={styles.container}>
         <div className={styles.choose}>
             <img src={choose} alt="choose"/>
             <div className={styles.headerChoose}>Why choose us?</div>
@@ -18,8 +19,10 @@ export const Choose = () => {
                     <li>All surfaces and tools are cleaned, disinfected before and after using</li>
                 </ul>
             </div>
-
+        </div>
         </div>
 )
     ;
 }
+
+export default Choose;
