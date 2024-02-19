@@ -1,23 +1,26 @@
 .choose {
+  margin: 30px 100px;
+  gap: 24px;
   display: flex;
-  align-items: center;
-
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
 
   .headerChoose {
     font-size: 62px;
-    color: white;
+    color: black;
     font-family: Poppins-ExtraBold, sans-serif;
   }
 
   .paragraphChoose {
     font-size: 24px;
-    color: white;
+    color: black;
     font-family: Poppins-SemiBold, sans-serif;
   }
 
   .listChoose {
     font-size: 24px;
-    color: white;
+    color: black;
     font-family: Poppins-Light, sans-serif;
   }
 

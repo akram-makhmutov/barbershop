@@ -3,12 +3,11 @@ import choose from '../../../global/assets/images/choose.svg'
 
 const Choose = () => {
     return (
-        <div className={styles.container}>
         <div className={styles.choose}>
-            <img src={choose} alt="choose"/>
+            {/*<img src={choose} alt="choose"/>*/}
             <div className={styles.headerChoose}>Why choose us?</div>
             <div className={styles.paragraphChoose}>
-                In addition, there 5 more reasons why men prefer Manhattan Barbershop N.Y.C:
+                In addition, there 5 more reasons why men <br/> prefer Manhattan Barbershop N.Y.C:
             </div>
             <div className={styles.listChoose}>
                 <ul>
@@ -19,7 +18,6 @@ const Choose = () => {
                     <li>All surfaces and tools are cleaned, disinfected before and after using</li>
                 </ul>
             </div>
-        </div>
         </div>
 )
     ;
