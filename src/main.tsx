@@ -8,7 +8,6 @@ import './index.css'
 import '../global/assets/styles/reset.css'
 import '../global/assets/styles/global.scss'
 import {mine_data} from './components/Home/minedata'
-// import {service_data} from "./components/OneService/servicedata"
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
