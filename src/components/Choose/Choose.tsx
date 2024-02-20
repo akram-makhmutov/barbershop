@@ -1,5 +1,5 @@
 import styles from './Choose.module.scss'
-import choose from '../../../global/assets/images/choose.svg'
+// import choose from '../../../global/assets/images/choose.svg'
 
 const Choose = () => {
     return (
