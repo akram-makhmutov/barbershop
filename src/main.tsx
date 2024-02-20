@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <Header/>
         <Home mine_data={mine_data as unknown as mine_data[]}/>
-        <FewServices service_data={service_data as unknown as service_data[]}/>
+        <FewServices/>
         <Choose/>
     </React.StrictMode>
 )

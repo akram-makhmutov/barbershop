@@ -1,6 +1,4 @@
-import React from "react"
 import styles from "./OneService.module.scss"
-import {service_data} from "./servicedata"
 import More from "../More/More.tsx"
 
 interface Props {

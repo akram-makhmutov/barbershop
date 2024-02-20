@@ -20,7 +20,7 @@ const Choose = () => {
                     </ul>
                 </div>
             </div>
-            <div className={styles.}
+            {/*<div className={styles.}*/}
         </div>
     )
         ;
