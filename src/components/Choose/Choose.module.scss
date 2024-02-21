@@ -1,8 +1,20 @@
+.chooseContainer {
+  margin-top: 110px;
+  width: 1440px;
+  height: 988px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.textPosition {
+  position: relative;
+}
+
 .whyChooseUs {
-  margin: 100px 120px;
+  margin: 260px 120px;
   display: flex;
   justify-content: space-between;
-
 
   .choose {
     gap: 24px;
@@ -14,21 +26,21 @@
 
     .headerChoose {
       font-size: 62px;
-      color: black;
+      color: white;
       font-family: Poppins-ExtraBold, sans-serif;
     }
 
     .paragraphChoose {
       font-size: 24px;
       line-height: 1.5;
-      color: black;
+      color: white;
       font-family: Poppins-SemiBold, sans-serif;
     }
 
     .listChoose {
       font-size: 24px;
       line-height: 3;
-      color: black;
+      color: white;
       font-family: Poppins-Light, sans-serif;
 
       ul li {
@@ -44,34 +56,28 @@
         }
       }
     }
-
-    img {
-      width: 1440px;
-      height: 988px;
-      margin-top: 100px;
-    }
   }
 
   .rectangle {
-    width: 583px;
-    height: 678px;
+    width: 584px;
+    height: 684px;
     border-radius: 32px;
-    gap: 38px;
+    gap: 40px;
     right: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    background: #F9FBFF;
+    background: white;
 
     .workingHours {
       font-size: 50px;
       color: #B5AF93;
       font-family: Poppins-Bold, sans-serif;
     }
-    .schedule {
 
+    .schedule {
       ul li {
         display: flex;
         justify-content: center;
@@ -84,5 +90,3 @@
     }
   }
 }
-
-

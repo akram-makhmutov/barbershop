@@ -6,23 +6,26 @@
 }
 
 .leftBlock {
-  line-height: 1.5;
+
   margin-top: 40px;
   margin-left: 123px;
 }
 
 .welcome {
+  line-height: 1.5;
   font-size: 42px;
   font-weight: 700;
 }
 
 .barbershop {
+  line-height: 1.5;
   font-size: 64px;
   font-weight: 700;
   font-family: Poppins-Bold, sans-serif;
 }
 
 .york {
+  line-height: 1.5;
   font-size: 64px;
   font-weight: 500;
   font-family: Poppins-ExtraBold, sans-serif;
@@ -32,12 +35,4 @@
   margin-right: 60px;
   width: 54vw;
   height: 54vw;
-}
-
-.show {
-  display: block;
-}
-
-.invisible {
-  display: none;
 }
