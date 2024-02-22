@@ -35,7 +35,7 @@ const Home = ({mine_data}: Props) => {
                 <img src={man} alt="man" className={styles.man}/>
             </div>
         </div>
-    )
+    );
 }
 
 export default Home;
