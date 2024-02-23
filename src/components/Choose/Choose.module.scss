@@ -1,22 +1,14 @@
 .chooseContainer {
-  margin-top: 110px;
   width: 1440px;
   height: 988px;
   background-size: cover;
-  background-position: center;
-  position: absolute;
-}
-
-.textPosition {
-  position: relative;
 }
 
 .whyChooseUs {
-  margin: 260px 120px;
-  display: flex;
-  justify-content: space-between;
+  margin: 100px 120px;
 
   .choose {
+    margin-top: 280px;
     gap: 24px;
     display: flex;
     align-items: start;
@@ -59,11 +51,12 @@
   }
 
   .rectangle {
+    margin-top: 270px;
     width: 584px;
     height: 684px;
     border-radius: 32px;
     gap: 40px;
-    right: 10%;
+    right: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
