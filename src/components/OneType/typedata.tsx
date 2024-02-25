@@ -1,9 +1,9 @@
-export type service_data = {
+export type type_data = {
     id: number;
     name: string;
 }
 
-export const service_data = [
+export const type_data = [
     {
         id: 0,
         name: "Regular Haircut",

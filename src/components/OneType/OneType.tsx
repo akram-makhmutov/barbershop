@@ -1,4 +1,4 @@
-import styles from "./OneService.module.scss"
+import styles from "./OneType.module.scss"
 import More from "../More/More.tsx"
 
 interface Props {
@@ -6,12 +6,12 @@ interface Props {
     list: { id: number, name: string }[];
 }
 
-const OneService = ({image, list}: Props) => {
+const OneType = ({image, list}: Props) => {
     return (
         <div>
             <img src={image} alt="image"/>
             {list && list.map((item, index) => (
-                <div key={index} className={styles.oneService}>
+                <div key={index} className={styles.oneType}>
                     <div className={styles.text}>{item.name}</div>
 
                 </div>
@@ -21,4 +21,4 @@ const OneService = ({image, list}: Props) => {
     );
 }
 
-export default OneService;
+export default OneType;

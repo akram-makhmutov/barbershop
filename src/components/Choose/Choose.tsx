@@ -21,7 +21,7 @@ const Choose = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className={styles.rectangle}>
+                        <div className={styles.whiteBox}>
                             <div className={styles.workingHours}>WORKING HOURS</div>
                             <div className={styles.schedule}>
                                 <ul>
