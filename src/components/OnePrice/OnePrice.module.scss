@@ -1,19 +1,25 @@
 .onePrice {
   margin-top: 100px;
-}
+  display: flex;
+  gap: 20px;
 
-.namePrice {
-  font-size: 36px;
-  color: black;
-  font-family: Poppins-ExtraLight, sans-serif;
-}
-.valuePrice {
-  font-size: 36px;
-  color: #9D9570;
-  font-family: Poppins-Light, sans-serif;
+  .namePrice {
+    font-size: 36px;
+    color: black;
+    font-family: Poppins-ExtraLight, sans-serif;
+  }
+
+  .valuePrice {
+    margin-left: auto;
+    width: 58vw;
+    font-size: 36px;
+    color: #9D9570;
+    font-family: Poppins-Light, sans-serif;
+  }
 }
 
 .linePrice {
+  margin-top: 20px;
   width: 580px;
   border-bottom: 1px solid #A7A7A7;
 }

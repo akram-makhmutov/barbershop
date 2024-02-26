@@ -5,3 +5,19 @@
   color: black;
   font-family: Poppins-ExtraBold, sans-serif;
 }
+
+.columnPrices {
+  display: flex;
+  flex-direction: column;
+
+  .listPrices_1 {
+    margin-left: 100px;
+    position: absolute;
+  }
+
+  .listPrices_2 {
+    left: 620px;
+    margin-left: 100px;
+    position: relative;
+  }
+}

@@ -13,7 +13,6 @@ const OneType = ({image, list}: Props) => {
             {list && list.map((item, index) => (
                 <div key={index} className={styles.oneType}>
                     <div className={styles.text}>{item.name}</div>
-
                 </div>
             ))}
             <More/>

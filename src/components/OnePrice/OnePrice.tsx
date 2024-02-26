@@ -6,14 +6,17 @@ interface Props {
 
 const OnePrice = ({list}: Props) => {
     return (
-        <div className={styles.onePrice}>
-            <div className={styles.namePrice}>
-
-            </div>
-            <div className={styles.valuePrice}>
-
-            </div>
+        <div>
+            {list && list.map((item, index) => (
+                <div key={index} className={styles.onePrice}>
+                    <div className={styles.namePrice}>{item.name}</div>
+                    <div className={styles.valuePrice}>{item.price}</div>
+                </div>
+            ))}
             <div className={styles.linePrice}></div>
         </div>
-    );
+    )
+        ;
 }
+
+export default OnePrice;
