@@ -5,6 +5,7 @@ import Home from './components/Home/Home.tsx'
 import FewTypes from './components/FewTypes/FewT ypes.tsx'
 import Choose from './components/Choose/Choose.tsx'
 import FewPrices from './components/FewPrices/FewPrices.tsx'
+import FewServices from './components/FewServices/FewServices.tsx'
 import './index.css'
 import '../global/assets/styles/reset.css'
 import '../global/assets/styles/global.scss'
@@ -17,5 +18,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <FewTypes/>
         <Choose/>
         <FewPrices/>
+        <FewServices/>
     </React.StrictMode>
 )
