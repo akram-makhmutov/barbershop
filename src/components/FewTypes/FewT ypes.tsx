@@ -3,7 +3,7 @@ import OneType from "../OneType/OneType"
 import {type_data} from "../OneType/typedata.tsx"
 import scissors from '../../../global/assets/images/scissors.svg'
 import beard from '../../../global/assets/images/beard.svg'
-import shaver from '../../../global/assets/images/shaver.svg'
+import razor from '../../../global/assets/images/razor.svg'
 import woman from '../../../global/assets/images/woman.svg'
 
 const FewTypes = () => {
@@ -15,7 +15,7 @@ const FewTypes = () => {
         <div className={styles.fewTypes}>
             <OneType image={scissors} list={[type_1]} />
             <OneType image={beard} list={[type_2]} />
-            <OneType image={shaver} list={[type_3]} />
+            <OneType image={razor} list={[type_3]} />
             <OneType image={woman} list={[type_4]} />
         </div>
     );

@@ -1,12 +1,18 @@
 .oneService {
+  width: 330px;
+  height: 310px;
+  background-color: #D9D9D9;
 
-  img{
-
+  img {
+    width: 100vw;
+    height: 100vw;
   }
 
+  .serviceText {
+    font-size: 48px;
+    color: black;
+    font-family: Poppins-SemiBold, sans-serif;
+  }
 }
 
-.serviceText {
-
-}
 
