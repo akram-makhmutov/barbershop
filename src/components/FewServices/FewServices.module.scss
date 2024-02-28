@@ -24,5 +24,14 @@
       position: absolute;
     }
   }
-}
 
+  .barbershopServicesData {
+    gap: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 1vw;
+    left: 48vw;
+  }
+}

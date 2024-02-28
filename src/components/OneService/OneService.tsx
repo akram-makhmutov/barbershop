@@ -8,9 +8,8 @@ interface Props {
 const OneService = ({image, list}: Props) => {
     return (
         <div>
-            <img src={image} alt="image"/>
             {list && list.map((item, index) => (
-                <div key={index} className={styles.oneService}>
+                <div key={index} className={styles.oneService}><img src={image} alt="image"/>
                     <div className={styles.serviceText}>{item.name}</div>
                 </div>
             ))}

@@ -1,16 +1,24 @@
 .oneService {
   width: 330px;
   height: 310px;
+  border-radius: 56px;
+  padding: 30px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
   background-color: #D9D9D9;
 
   img {
-    width: 100vw;
-    height: 100vw;
+    width: 128px;
+    height: 128px;
   }
 
   .serviceText {
     font-size: 48px;
     color: black;
+    white-space: nowrap;
     font-family: Poppins-SemiBold, sans-serif;
   }
 }

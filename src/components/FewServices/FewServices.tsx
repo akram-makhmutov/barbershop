@@ -17,11 +17,13 @@ const FewServices = () => {
             <div className={styles.barbershopData}>
                 <div className={styles.barbershopName}>Barbershop Services</div>
                 <div className={styles.barbershopServices}><img src={master} alt="master"/></div>
-                <div className={styles.barbershopFewServices}>
-                    <OneService image={haircut} list={[service_1]} />
-                    <OneService image={shaver} list={[service_2]} />
-                    <OneService image={trim} list={[service_3]} />
-                    <OneService image={kids} list={[service_4]} />
+                <div className={styles.barbershopServicesData}>
+                    <OneService image={haircut} list={[service_1]}/>
+                    <OneService image={shaver} list={[service_2]}/>
+                </div>
+                <div className={styles.barbershopServicesData}>
+                    <OneService image={trim} list={[service_3]}/>
+                    <OneService image={kids} list={[service_4]}/>
                 </div>
             </div>
         </div>
