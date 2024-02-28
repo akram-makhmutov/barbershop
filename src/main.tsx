@@ -6,10 +6,12 @@ import FewTypes from './components/FewTypes/FewT ypes.tsx'
 import Choose from './components/Choose/Choose.tsx'
 import FewPrices from './components/FewPrices/FewPrices.tsx'
 import FewServices from './components/FewServices/FewServices.tsx'
+import BestHaircut from './components/BestHaircut/BestHaircut'
 import './index.css'
 import '../global/assets/styles/reset.css'
 import '../global/assets/styles/global.scss'
 import {mine_data} from './components/Home/minedata'
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
@@ -19,5 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Choose/>
         <FewPrices/>
         <FewServices/>
+        <BestHaircut/>
     </React.StrictMode>
 )
