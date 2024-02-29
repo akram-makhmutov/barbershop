@@ -1,0 +1,23 @@
+.FooterContainer {
+  gap: 10vw;
+  display: flex;
+  position: relative;
+
+  img {
+    width: 720px;
+    height: 870px;
+  }
+
+  .contactText {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    font-family: Poppins-ExtraBold, sans-serif;
+  }
+}
+
+.contactContainer {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
