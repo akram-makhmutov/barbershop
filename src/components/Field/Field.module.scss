@@ -1,0 +1,23 @@
+.contactField {
+  gap: 40px;
+  right: 3vw;
+  top: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+
+  .whiteSquare {
+    width: 618px;
+    height: 66px;
+    background-color: white;
+    border: none;
+  }
+
+  .fieldText {
+    padding: 20px;
+    font-size: 30px;
+    color: #A59797;
+    font-family: Poppins-Light, sans-serif;
+  }
+}
