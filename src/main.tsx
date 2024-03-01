@@ -13,16 +13,15 @@ import '../global/assets/styles/reset.css'
 import '../global/assets/styles/global.scss'
 import {mine_data} from './components/Home/minedata'
 
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <Header/>
-        <Home mine_data={mine_data as unknown as mine_data[]}/>
-        <FewTypes/>
-        <Choose/>
-        <FewPrices/>
-        <FewServices/>
-        <BestHaircut/>
-        <Footer/>
+            <Header/>
+            <Home mine_data={mine_data as unknown as mine_data[]}/>
+            <FewTypes/>
+            <Choose/>
+            <FewPrices/>
+            <FewServices/>
+            <BestHaircut/>
+            <Footer/>
     </React.StrictMode>
 )
