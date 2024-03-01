@@ -6,20 +6,20 @@
 .bestHaircutText {
   padding-top: 100px;
   font-size: 70px;
+  line-height: 1.5;
   text-align: center;
   color: white;
   font-family: Poppins-ExtraBold, sans-serif;
 }
 
 .bestHaircutImages {
-  margin-top: 70px;
+  margin-top: 60px;
   gap: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
   img {
-
     width: 380px;
     height: 400px;
     border-radius: 30px;
