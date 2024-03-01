@@ -25,4 +25,3 @@ const BestHaircut = () => {
 }
 
 export default BestHaircut;
-
