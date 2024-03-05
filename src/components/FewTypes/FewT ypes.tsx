@@ -13,10 +13,10 @@ const FewTypes = () => {
     const type_4 = type_data[3];
     return (
         <div className={styles.fewTypes}>
-            <OneType image={scissors} list={[type_1]} />
-            <OneType image={beard} list={[type_2]} />
-            <OneType image={razor} list={[type_3]} />
-            <OneType image={woman} list={[type_4]} />
+            <OneType image={scissors} list={[type_1]}/>
+            <OneType image={beard} list={[type_2]}/>
+            <OneType image={razor} list={[type_3]}/>
+            <OneType image={woman} list={[type_4]}/>
         </div>
     );
 }

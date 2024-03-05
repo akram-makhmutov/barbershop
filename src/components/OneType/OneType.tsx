@@ -3,11 +3,10 @@ import More from "../More/More.tsx"
 
 interface Props {
     image: string;
-    list: { name: string }[];
+    list: { name: string, text: string }[];
 }
 
 const OneType = ({image, list}: Props) => {
-
     return (
         <div>
             <img src={image} alt="image"/>
@@ -16,7 +15,11 @@ const OneType = ({image, list}: Props) => {
                     <div className={styles.oneTypeText}>{item.name}</div>
                 </div>
             ))}
-            <More/>
+            {list && list.map((item, index) => (
+                <div key={index} className={styles.oneType}>
+                    <More text={item.text}/>
+                </div>
+            ))}
         </div>
     );
 }
