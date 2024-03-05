@@ -1,3 +1,7 @@
+.hiddenText {
+
+}
+
 .buttonMore {
   margin-top: 26px;
   padding: 18px 56px;
@@ -5,6 +9,7 @@
   font-size: 32px;
   text-align: center;
   display: inline-block;
+  user-select: none;
   color: white;
   background-color: black;
   font-family: Poppins-Regular;
@@ -14,5 +19,8 @@
     border: none;
     background-color: #B5AF93;
     color: white;
+  }
+  :active {
+    padding: 0;
   }
 }

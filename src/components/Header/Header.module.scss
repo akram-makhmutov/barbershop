@@ -19,10 +19,11 @@
     align-items: center;
 
     li {
-      list-style: none;
-      white-space: nowrap;
       padding: 10px 16px;
       font-size: 22px;
+      list-style: none;
+      user-select: none;
+      white-space: nowrap;
       color: black;
       cursor: pointer;
 
