@@ -2,7 +2,7 @@ import styles from './OurTeam.module.scss';
 import footer from '../../../global/assets/images/footer.svg';
 import Field from '../Field/Field.tsx';
 import Submit from '../Submit/Submit.tsx';
-import React from 'react';
+// import React from 'react';
 
 const OurTeam = () => {
     return (
