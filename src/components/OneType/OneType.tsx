@@ -1,5 +1,5 @@
-import styles from "./OneType.module.scss"
-import More from "../More/More.tsx"
+import styles from './OneType.module.scss';
+import More from '../More/More.tsx';
 
 interface Props {
     image: string;
@@ -17,7 +17,7 @@ const OneType = ({image, list}: Props) => {
             ))}
             {list && list.map((item, index) => (
                 <div key={index} className={styles.oneType}>
-                    <More text={item.text}/>
+                    <More text={item.text} list={list}/>
                 </div>
             ))}
         </div>

@@ -1,4 +1,4 @@
-import styles from './Submit.module.scss'
+import styles from './Submit.module.scss';
 
 const Submit = () => {
     return (

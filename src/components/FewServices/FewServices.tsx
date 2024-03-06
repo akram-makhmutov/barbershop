@@ -1,11 +1,11 @@
-import styles from './FewServices.module.scss'
-import master from '../../../global/assets/images/master.svg'
-import OneService from "../OneService/OneService"
-import {service_data} from "../OneService/servicedata"
+import styles from './FewServices.module.scss';
+import master from '../../../global/assets/images/master.svg';
+import OneService from '../OneService/OneService';
+import {service_data} from '../OneService/servicedata';
 import haircut from '../../../global/assets/images/haircut.svg'
-import shaver from '../../../global/assets/images/shaver.svg'
-import trim from '../../../global/assets/images/trim.svg'
-import kids from '../../../global/assets/images/kids.svg'
+import shaver from '../../../global/assets/images/shaver.svg';
+import trim from '../../../global/assets/images/trim.svg';
+import kids from '../../../global/assets/images/kids.svg';
 
 const FewServices = () => {
     const service_1 = service_data[0];

@@ -1,10 +1,10 @@
-import styles from './BestHaircut.module.scss'
-import best_1 from '../../../global/assets/images/best_1.svg'
-import best_2 from '../../../global/assets/images/best_2.svg'
-import best_3 from '../../../global/assets/images/best_3.svg'
-import best_4 from '../../../global/assets/images/best_4.svg'
-import best_5 from '../../../global/assets/images/best_5.svg'
-import best_6 from '../../../global/assets/images/best_6.svg'
+import styles from './BestHaircut.module.scss';
+import best_1 from '../../../global/assets/images/best_1.svg';
+import best_2 from '../../../global/assets/images/best_2.svg';
+import best_3 from '../../../global/assets/images/best_3.svg';
+import best_4 from '../../../global/assets/images/best_4.svg';
+import best_5 from '../../../global/assets/images/best_5.svg';
+import best_6 from '../../../global/assets/images/best_6.svg';
 
 const BestHaircut = () => {
     return (

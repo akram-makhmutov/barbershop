@@ -1,4 +1,4 @@
-import styles from './BookOnline.module.scss'
+import styles from './BookOnline.module.scss';
 
 const BookOnline = () => {
     return (

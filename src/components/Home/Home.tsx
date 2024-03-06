@@ -1,8 +1,8 @@
-import styles from './Home.module.scss'
-import {mine_data} from './minedata'
-import man from '../../../global/assets/images/man.svg'
-import Contacts from '../Contacts/Contacts.tsx'
-import BookOnline from "../BookOnline/BookOnline"
+import styles from './Home.module.scss';
+import {mine_data} from './minedata';
+import man from '../../../global/assets/images/man.svg';
+import Contacts from '../Contacts/Contacts.tsx';
+import BookOnline from '../BookOnline/BookOnline';
 
 interface Props {
     mine_data: mine_data[];

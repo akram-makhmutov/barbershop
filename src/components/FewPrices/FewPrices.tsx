@@ -1,6 +1,6 @@
-import styles from './FewPrices.module.scss'
-import {price_data} from '../OnePrice/pricedata.tsx'
-import OnePrice from "../OnePrice/OnePrice"
+import styles from './FewPrices.module.scss';
+import {price_data} from '../OnePrice/pricedata.tsx';
+import OnePrice from '../OnePrice/OnePrice.tsx';
 
 const FewPrices = () => {
     const price_1 = price_data[0];

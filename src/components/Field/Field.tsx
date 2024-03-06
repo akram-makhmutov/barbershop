@@ -1,4 +1,4 @@
-import styles from './Field.module.scss'
+import styles from './Field.module.scss';
 
 const Field = ({height, text}: { height?: number, text: string }) => {
     return (

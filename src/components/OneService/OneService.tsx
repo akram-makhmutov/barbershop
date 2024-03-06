@@ -1,4 +1,4 @@
-import styles from './OneService.module.scss'
+import styles from './OneService.module.scss';
 
 interface Props {
     image: string;

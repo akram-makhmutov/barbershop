@@ -1,18 +1,18 @@
-import styles from './More.module.scss'
-import {useState} from "react";
+import styles from './More.module.scss';
+import {useState} from 'react';
 
 interface Props {
     list: { text: string }[];
 }
 
 const More = ({text}: Props) => {
-    const [showMoreText, setShowMoreText] = useState(false);
+    const [showText, setShowText] = useState(false);
     const toggleMoreText = () => {
-        setShowMoreText(!showMoreText);
+        setShowText(!showText);
     };
     return (
         <div>
-            {showMoreText && <div className={styles.hiddenText}>{text}</div>}
+            {showText && <div className={styles.hiddenText}>{text}</div>}
             <div onClick={toggleMoreText} className={styles.buttonMore}>MORE</div>
         </div>
     );

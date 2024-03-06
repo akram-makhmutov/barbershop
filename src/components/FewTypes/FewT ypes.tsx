@@ -1,10 +1,10 @@
-import styles from './FewTypes.module.scss'
-import OneType from "../OneType/OneType"
-import {type_data} from "../OneType/typedata.tsx"
-import scissors from '../../../global/assets/images/scissors.svg'
-import beard from '../../../global/assets/images/beard.svg'
-import razor from '../../../global/assets/images/razor.svg'
-import woman from '../../../global/assets/images/woman.svg'
+import styles from './FewTypes.module.scss';
+import OneType from '../OneType/OneType';
+import {type_data} from '../OneType/typedata.tsx';
+import scissors from '../../../global/assets/images/scissors.svg';
+import beard from '../../../global/assets/images/beard.svg';
+import razor from '../../../global/assets/images/razor.svg';
+import woman from '../../../global/assets/images/woman.svg';
 
 const FewTypes = () => {
     const type_1 = type_data[0];

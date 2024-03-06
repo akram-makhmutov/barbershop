@@ -1,4 +1,4 @@
-import styles from './OnePrice.module.scss'
+import styles from './OnePrice.module.scss';
 
 interface Props {
     list: { name: string, price: string }[];
