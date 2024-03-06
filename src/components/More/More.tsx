@@ -2,17 +2,18 @@ import styles from './More.module.scss';
 import {useState} from 'react';
 
 interface Props {
-    text: {text: string};
+    list: { name: string, text: string }[];
 }
 
-const More = ({text}: Props) => {
+const More = ({list}: Props) => {
     const [showText, setShowText] = useState(false);
     const toggleMoreText = () => {
         setShowText(!showText);
     };
     return (
         <div>
-            {showText && <div className={styles.hiddenText}>{text}</div>}
+            {list && list.map((item, index) => (
+                showText && <div key={index} className={styles.hiddenText}>{item.text}</div>))}
             <div onClick={toggleMoreText} className={styles.buttonMore}>MORE</div>
         </div>
     );
