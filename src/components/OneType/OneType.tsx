@@ -10,16 +10,24 @@ const OneType = ({image, list}: Props) => {
     return (
         <div>
             <img src={image} alt="image"/>
-            {list && list.map((item, index) => (
-                <div key={index} className={styles.oneType}>
-                    <div className={styles.oneTypeText}>{item.name}</div>
-                </div>
-            ))}
-            {list && list.map((item, index) => (
-                <div key={index} className={styles.oneType}>
-                    <More text={item.text} list={list}/>
-                </div>
-            ))}
+            {/*{list && list.map((item, index) => (*/}
+            {/*    <div key={index} className={styles.oneType}>*/}
+            {/*        <div className={styles.oneTypeText}>{item.name}</div>*/}
+            {/*    </div>*/}
+            {/*))}*/}
+            {/*{list && list.map((item, index) => (*/}
+            {/*    <div key={index} className={styles.oneType}>*/}
+            {/*        <More text={item.text} list={list}/>*/}
+            {/*    </div>*/}
+            {/*))}*/}
+            <div className={styles.oneType}>
+                {list && list.map((item, index) => (
+                    <div key={index} className={styles.moreText}>
+                        <div className={styles.oneTypeText}>{item.name}</div>
+                        <More key={index} text={item.text}/>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }

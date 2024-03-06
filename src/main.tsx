@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path='/ourteam' element={<OurTeam/>} />
+                <Route path='/team' element={<OurTeam/>} />
             </Routes>
             <Home mine_data={mine_data as unknown as mine_data[]}/>
             <FewTypes/>

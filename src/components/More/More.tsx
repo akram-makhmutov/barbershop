@@ -2,7 +2,7 @@ import styles from './More.module.scss';
 import {useState} from 'react';
 
 interface Props {
-    list: { text: string }[];
+    text: string;
 }
 
 const More = ({text}: Props) => {
