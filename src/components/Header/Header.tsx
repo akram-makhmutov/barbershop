@@ -1,5 +1,6 @@
 import styles from './Header.module.scss';
 import logo from '../../../global/assets/images/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -7,9 +8,9 @@ const Header = () => {
             <img src={logo} alt="logo" className={styles.logo}/>
             <div className={styles.menu}>
                 <ul>
-                    <li>Home</li>
-                    <li>Our Team</li>
-                    <li>Gallery</li>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/team">Our Team</Link></li>
+                    <li><Link to="/gallery">Gallery</Link></li>
                 </ul>
             </div>
         </div>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Header from './components/Header/Header.tsx';
 import OurTeam from './components/OurTeam/OurTeam.tsx';
+import Gallery from './components/Gallery/Gallery.tsx';
 import Home from './components/Home/Home.tsx';
 import FewTypes from './components/FewTypes/FewT ypes.tsx';
 import Choose from './components/Choose/Choose.tsx';
@@ -20,15 +21,20 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path='/team' element={<OurTeam/>} />
+                <Route path="/home" element={
+                    <>
+                        <Home mine_data={mine_data as unknown as mine_data[]} />
+                        <FewTypes />
+                        <Choose />
+                        <FewPrices />
+                        <FewServices />
+                        <BestHaircut />
+                        <Footer />
+                    </>
+                } />
+                <Route path="/team" element={<OurTeam />} />
+                <Route path="/gallery" element={<Gallery />} />
             </Routes>
-            <Home mine_data={mine_data as unknown as mine_data[]}/>
-            <FewTypes/>
-            <Choose/>
-            <FewPrices/>
-            <FewServices/>
-            <BestHaircut/>
-            <Footer/>
         </BrowserRouter>
     </React.StrictMode>
 )
