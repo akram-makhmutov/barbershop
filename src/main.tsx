@@ -21,19 +21,30 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path="/home" element={
+                <Route path="/" element={
                     <>
-                        <Home mine_data={mine_data as unknown as mine_data[]} />
-                        <FewTypes />
-                        <Choose />
-                        <FewPrices />
-                        <FewServices />
-                        <BestHaircut />
-                        <Footer />
+                        <Home mine_data={mine_data as unknown as mine_data[]}/>
+                        <FewTypes/>
+                        <Choose/>
+                        <FewPrices/>
+                        <FewServices/>
+                        <BestHaircut/>
+                        <Footer/>
                     </>
-                } />
-                <Route path="/team" element={<OurTeam />} />
-                <Route path="/gallery" element={<Gallery />} />
+                }/>
+                <Route path="home" element={
+                    <>
+                        <Home mine_data={mine_data as unknown as mine_data[]}/>
+                        <FewTypes/>
+                        <Choose/>
+                        <FewPrices/>
+                        <FewServices/>
+                        <BestHaircut/>
+                        <Footer/>
+                    </>
+                }/>
+                <Route path="/team" element={<OurTeam/>}/>
+                <Route path="/gallery" element={<Gallery/>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
