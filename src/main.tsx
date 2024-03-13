@@ -11,6 +11,7 @@ import FewPrices from './components/FewPrices/FewPrices.tsx';
 import FewServices from './components/FewServices/FewServices.tsx';
 import BestHaircut from './components/BestHaircut/BestHaircut.tsx';
 import Footer from './components/Footer/Footer.tsx';
+import ButtonUp from './components/ButtonUp/ButtonUp.tsx';
 import './index.css';
 import '../global/assets/styles/reset.css';
 import '../global/assets/styles/global.scss';
