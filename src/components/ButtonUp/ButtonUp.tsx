@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './ButtonUp.module.scss';
 import arrow_up from '../../../global/assets/images/arrow_up.svg';
 
@@ -7,35 +7,33 @@ const ButtonUp = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Проверяем, насколько прокручена страница
             const isScrolled = window.scrollY > 0;
-            // Показываем или скрываем кнопку в зависимости от того, прокручена страница или нет
             setVisible(isScrolled);
         };
 
-        // Добавляем обработчик события прокрутки при монтировании компонента
         window.addEventListener('scroll', handleScroll);
 
-        // Убираем обработчик события при размонтировании компонента
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
     const scrollToTop = () => {
-        // Прокручиваем страницу вверх с плавной анимацией
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        const scrollStep = -window.scrollY / (500 / 15);
+        const scrollInterval = setInterval(() => {
+            if (window.scrollY !== 0) {
+                window.scrollBy(0, scrollStep);
+            } else {
+                clearInterval(scrollInterval);
+            }
+        }, 15);
     };
 
     return (
-        visible && (
-            <div className={styles.backToTopButton} onClick={scrollToTop}>
-                <img src={arrow_up} alt="arrow up" />
-            </div>
-        )
+        <div className={`${styles.backToTopButton}
+        ${visible ? styles.backToTopButtonVisible : styles.backToTopButtonHidden}`} onClick={scrollToTop}>
+            <img src={arrow_up} alt="arrow up"/>
+        </div>
     );
 };
 
