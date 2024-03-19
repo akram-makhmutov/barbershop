@@ -1,15 +1,16 @@
 .hiddenText {
-  overflow: hidden;
-  transition: height 0.3s ease;
-  height: 0;
-  color: black;
-  font-size: 20px;
-  font-family: Poppins-Light;
   padding-top: 10px;
+  font-size: 14px;
+  width: 16vw;
+  color: black;
+  overflow: hidden;
+  font-family: Poppins-Light;
+  transition: height 0.3s ease;
 }
 
 .hiddenTextVisible {
-  height: auto;
+  overflow: visible;
+  font-size: 14px;
 }
 
 .buttonMore {
