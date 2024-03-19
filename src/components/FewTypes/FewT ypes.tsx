@@ -6,7 +6,6 @@ import beard from '../../../global/assets/images/beard.svg';
 import razor from '../../../global/assets/images/razor.svg';
 import woman from '../../../global/assets/images/woman.svg';
 import ButtonUp from "../ButtonUp/ButtonUp";
-import React from "react";
 
 const FewTypes = () => {
     const type_1 = type_data[0];

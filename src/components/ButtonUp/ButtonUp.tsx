@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import styles from './ButtonUp.module.scss';
 import arrow_up from '../../../global/assets/images/arrow_up.svg';
 

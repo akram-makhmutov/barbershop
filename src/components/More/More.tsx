@@ -1,5 +1,5 @@
 import styles from './More.module.scss';
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 interface Props {
     text: string;
@@ -13,10 +13,13 @@ const More = ({text}: Props) => {
     };
 
     useEffect(() => {
-        if (showText) {
-            setTextHeight(document.getElementById('hiddenText').scrollHeight);
-        } else {
-            setTextHeight(0);
+        const element = document.getElementById('hiddenText');
+        if (element) {
+            if (showText) {
+                setTextHeight(element.scrollHeight);
+            } else {
+                setTextHeight(0);
+            }
         }
     }, [showText]);
 
