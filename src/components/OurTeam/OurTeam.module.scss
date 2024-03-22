@@ -1,27 +1,7 @@
-.OurTeamContainer {
-  gap: 10vw;
+.ourTeamFewTypes{
+  margin-top: 100px;
   display: flex;
-  position: relative;
-
-  img {
-    width: 720px;
-    height: 870px;
-  }
-}
-
-.OurTeamContactContainer {
-  gap: 30px;
-  right: 3vw;
-  top: 3vw;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-
-  .OurTeamContactText {
-    font-size: 70px;
-    text-align: center;
-    color: white;
-    white-space: nowrap;
-    font-family: Poppins-ExtraBold, sans-serif;
-  }
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
