@@ -28,11 +28,12 @@
   }
 }
 
-.enlarged-image {
+.bigImage {
   transform: scale(1.2);
   filter: brightness(70%);
 }
 
-.darkened-background {
+.blackBack {
   background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
 }
