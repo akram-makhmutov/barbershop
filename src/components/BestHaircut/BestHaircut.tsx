@@ -17,7 +17,7 @@ const BestHaircut = () => {
             });
         }
     }
-
+    
     return (
         <div className={styles.bestHaircut} style={{backgroundColor: '#9D9570'}}>
             <div className={styles.bestHaircutText}>Experience the Best Haircut <br/> & Shave Services</div>
