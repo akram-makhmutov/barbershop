@@ -3,6 +3,7 @@ import BookOnline from '../BookOnline/BookOnline.tsx';
 import choose from '../../../global/assets/images/choose.svg';
 
 const Choose = () => {
+
     return (
             <div className={styles.chooseContainer} style={{backgroundImage: `url(${choose})`}}>
                     <div className={styles.whyChooseUs}>

@@ -1,6 +1,6 @@
 .bestHaircut {
   width: 1440px;
-  height: 1300px;
+  height: 1350px;
 }
 
 .bestHaircutText {
@@ -26,14 +26,4 @@
     border-radius: 30px;
     cursor: pointer;
   }
-}
-
-.bigImage {
-  transform: scale(1.2);
-  filter: brightness(70%);
-}
-
-.blackBack {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s;
 }
