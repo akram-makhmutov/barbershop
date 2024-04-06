@@ -1,5 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '..//..//..//modal';
+import styles from './BestHaircutImage.module.scss';
+import {useState} from "react";
 
 interface Props {
     masterImage: string;
@@ -7,22 +7,29 @@ interface Props {
 
 const BestHaircutImage = ({masterImage}: Props) => {
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => {
+        setIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);
+    };
+
     return (
         <div>
-            <img src={masterImage} alt="master" data-bs-toggle="modal" className="w-25 h-25" data-bs-target="#masterImg"/>
-            <div className="modal fade" id="masterImg" tabIndex={-1} aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-body">
-                            <button type="button" className="btn-close"
-                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                    </div>
-                </div>
+            <div className={styles.masterImage}>
+                <img src={masterImage} onClick={openModal} alt="master"/>
             </div>
+            {isOpen && (
+                <div className="modal">
+                    <img className="modalContent" src={masterImage}/>
+                    <span className="close" onClick={closeModal}>&times;</span>
+                </div>
+            )}
         </div>
     );
-}
-
+};
 
 export default BestHaircutImage;
