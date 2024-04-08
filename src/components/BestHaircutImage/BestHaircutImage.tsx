@@ -12,10 +12,12 @@ const BestHaircutImage = ({masterImage}: Props) => {
 
     const openModal = () => {
         setIsOpen(true);
+        document.body.classList.add('modalImageOpen');
     };
 
     const closeModal = () => {
         setIsOpen(false);
+        document.body.classList.remove('modalImageOpen');
     };
 
     return (
