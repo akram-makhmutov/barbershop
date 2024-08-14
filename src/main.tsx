@@ -19,7 +19,6 @@ import {mine_data} from './components/Home/minedata';
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <BrowserRouter>
-            {/*<ButtonUp/>*/}
             <Header/>
             <Routes>
                 <Route path="/" element={

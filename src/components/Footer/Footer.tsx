@@ -5,7 +5,7 @@ import Submit from '../Submit/Submit.tsx';
 
 const Footer = () => {
     return (
-        <div className={styles.FooterContainer} style={{backgroundColor: '#292D33'}}>
+        <div className={styles.footerContainer} style={{backgroundColor: '#292D33'}}>
             <img src={footer} alt="footer"/>
             <div className={styles.contactContainer}>
                 <div className={styles.contactText}>Contact Us!</div>

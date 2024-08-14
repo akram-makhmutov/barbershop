@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import styles from './OneTypeTeam.module.scss';
 import More from '../More/More.tsx';
 
@@ -28,7 +28,7 @@ const OneTypeTeam = ({ image, list }: Props) => {
             .catch(error => {
                 console.error('Произошла ошибка:', error);
             });
-    }, []); // Пустой массив зависимостей гарантирует, что эффект будет выполняться только один раз
+    }, []);
 
     return (
         <div>
