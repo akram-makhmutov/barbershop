@@ -1,9 +1,9 @@
 import styles from './Submit.module.scss';
 
-const Submit = () => {
+const Submit = ({width}: { width?: number }) => {
     return (
-        <div className={styles.submit}>Submit</div>
+        <button className={styles.submit} style={{width}}>Submit</button>
     );
 }
 
-export  default Submit;
+export default Submit;

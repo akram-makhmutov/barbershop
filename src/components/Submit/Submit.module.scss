@@ -1,14 +1,17 @@
 .submit {
-  padding: 16px;
+  margin-top: 18px;
   width: 618px;
   height: 66px;
   border-radius: 20px;
   font-size: 36px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   color: white;
+  border: none;
+  user-select: none;
   background-color: #9D9570;
   font-family: Poppins-Medium, sans-serif;
-  user-select: none;
   cursor: pointer;
 }

@@ -9,14 +9,13 @@ const Footer = () => {
             <img src={footer} alt="footer"/>
             <div className={styles.contactContainer}>
                 <div className={styles.contactText}>Contact Us!</div>
-                <Field height={66} text="Enter your name"/>
-                <Field height={66} text="Enter a valid email address"/>
-                <Field height={210} text="Enter your message"/>
+                <Field fontSize={"24px"} text="Enter your name"/>
+                <Field fontSize={"24px"} text="Enter a valid email address"/>
+                <Field fontSize={"24px"} text="Enter your message"/>
                 <Submit/>
             </div>
         </div>
-    )
-        ;
+    );
 }
 
 export default Footer;

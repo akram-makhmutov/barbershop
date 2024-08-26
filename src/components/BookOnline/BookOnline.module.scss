@@ -16,19 +16,16 @@
   }
 }
 
-.active-modal {
-  overflow: hidden;
-}
-
 .modal {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -42,19 +39,40 @@
 .modalContent {
   position: relative;
   background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 500px;
-  width: 100%;
-  z-index: 1000;
+  padding: 30px;
+  width: 60%;
+  height: 72%;
 }
 
 .closeModal {
+  top: 12px;
+  right: 12px;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 18px;
   cursor: pointer;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.text {
+  font-size: 45px;
+  margin: 20px 0px 30px 0px;
+  text-align: center;
+  color: black;
+  white-space: nowrap;
+  font-family: Poppins-Bold, sans-serif;
+}
+
+.fields {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
 }

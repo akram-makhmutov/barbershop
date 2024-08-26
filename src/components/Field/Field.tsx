@@ -1,13 +1,17 @@
+import React from 'react';
 import styles from './Field.module.scss';
 
-const Field = ({height, text}: { height?: number, text: string }) => {
-    return (
-        <div className={styles.contactField}>
-            <div className={styles.whiteSquare} style={{height: height || 66}}>
-                <div className={styles.fieldText}>{text}</div>
-            </div>
-        </div>
-    )
+interface FieldProps {
+    fontSize: string;
+    text: string;
 }
+
+const Field = React.forwardRef<HTMLInputElement, FieldProps>(({fontSize, text}, ref) => {
+    return (
+        <div>
+            <input className={styles.fieldText} placeholder={text} style={{fontSize}} ref={ref}/>
+        </div>
+    );
+});
 
 export default Field;

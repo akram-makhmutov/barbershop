@@ -1,16 +1,9 @@
-.contactField {
-
-  .whiteSquare {
-    width: 618px;
-    height: 66px;
-    background-color: white;
-    border: none;
-  }
-
-  .fieldText {
-    padding: 20px;
-    font-size: 30px;
-    color: #A59797;
-    font-family: Poppins-Light, sans-serif;
-  }
+.fieldText {
+  width: 620px;
+  height: 70px;
+  padding: 20px;
+  font-size: 30px;
+  color: #A59797;
+  display: inline;
+  font-family: Poppins-Light, sans-serif;
 }
