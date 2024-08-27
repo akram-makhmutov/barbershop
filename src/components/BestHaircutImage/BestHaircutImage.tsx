@@ -1,36 +1,40 @@
-import {useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import styles from './BestHaircutImage.module.scss';
-import close from '../../../global/assets/images/close.svg';
+import close from '../../../global/assets/images/close_2.svg';
 
 interface Props {
     masterImage: string;
 }
 
 const BestHaircutImage = ({masterImage}: Props) => {
+    const [modal, setModal] = useState(false);
+    const modalRef = useRef<HTMLDivElement>(null);
 
-    const [isOpen, setIsOpen] = useState(false);
-
-    const openModal = () => {
-        setIsOpen(true);
-        document.body.classList.add('modalImageOpen');
+    const switchModal = () => {
+        setModal(!modal);
     };
 
-    const closeModal = () => {
-        setIsOpen(false);
-        document.body.classList.remove('modalImageOpen');
-    };
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                setModal(false);
+            }
+        };
+
+        document.addEventListener("keydown", handleKeyDown);
+    }, []);
 
     return (
         <div>
             <div className={styles.masterImage}>
-                <img src={masterImage} onClick={openModal} alt="master"/>
+                <img src={masterImage} onClick={switchModal}/>
             </div>
-            {isOpen && (
-                <div className={styles.modal} onClick={closeModal}>
-                    <img className={styles.modalContent}
-                         onClick={(e) => e.stopPropagation()}
-                         src={masterImage} alt="master"/>
-                    <img className={styles.close} src={close} alt="close"/>
+            {modal && (
+                <div className={styles.modal} onClick={switchModal} ref={modalRef}>
+                    <img className={styles.modalContent} src={masterImage}/>
+                    <div className={styles.closeModal} onClick={switchModal}>
+                        <img src={close}/>
+                    </div>
                 </div>
             )}
         </div>

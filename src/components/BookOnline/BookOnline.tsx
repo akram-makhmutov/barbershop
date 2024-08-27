@@ -1,8 +1,8 @@
 import styles from "./BookOnline.module.scss";
-import {useEffect, useRef, useState} from "react";
 import Field from "../Field/Field.tsx";
 import Submit from "../Submit/Submit.tsx";
-import close from "../../../global/assets/images/close.svg";
+import close from "../../../global/assets/images/close_1.svg";
+import {useEffect, useRef, useState} from "react";
 
 const BookOnline = () => {
     const [modal, setModal] = useState(false);
@@ -22,23 +22,19 @@ const BookOnline = () => {
         };
 
         document.addEventListener("keydown", handleKeyDown);
-
-        return () => {
-            document.removeEventListener("keydown", handleKeyDown);
-        };
     }, []);
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-
         const name = nameRef.current?.value;
         const email = emailRef.current?.value;
         const message = messageRef.current?.value;
 
         if (name && email && message) {
             alert(`Name: ${name}, Email: ${email}, Message: ${message}`);
+            setModal(false);
         } else {
-            alert("Please fill out all fields.");
+            alert("Please fill out all fields");
         }
     };
 
@@ -52,7 +48,7 @@ const BookOnline = () => {
                     <div className={styles.overlay} onClick={switchModal}></div>
                     <div className={styles.modalContent}>
                         <div className={styles.closeModal} onClick={switchModal}>
-                            <img src={close} alt="close"/>
+                            <img src={close}/>
                         </div>
                         <div className={styles.text}>Contact Us!</div>
                         <form onSubmit={handleSubmit} className={styles.fields}>
