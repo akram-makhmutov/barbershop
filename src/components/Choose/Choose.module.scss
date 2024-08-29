@@ -1,14 +1,15 @@
 .chooseContainer {
+  margin-top: 100px;
   width: 1440px;
-  height: 988px;
+  height: 820px;
   background-size: cover;
 }
 
 .whyChooseUs {
-  margin: 100px 120px;
+  margin: 0px 120px;
 
   .choose {
-    margin-top: 280px;
+    margin-top: 80px;
     gap: 24px;
     display: flex;
     align-items: start;
@@ -51,18 +52,19 @@
   }
 
   .whiteBox {
-    margin-top: 270px;
+    margin-top: 80px;
+    right: 8vw;
     width: 584px;
     height: 684px;
     border-radius: 32px;
     gap: 40px;
-    right: 8%;
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    background: white;
+
 
     .workingHours {
       font-size: 50px;

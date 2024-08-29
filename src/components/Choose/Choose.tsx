@@ -1,6 +1,6 @@
 import styles from './Choose.module.scss';
-import BookOnline from '../BookOnline/BookOnline.tsx';
 import choose from '../../../global/assets/images/choose.svg';
+import BookOnline from '../BookOnline/BookOnline.tsx';
 
 const Choose = () => {
 

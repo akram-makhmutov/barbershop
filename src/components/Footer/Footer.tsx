@@ -1,7 +1,7 @@
 import styles from './Footer.module.scss';
-import footer from '../../../global/assets/images/footer.svg';
 import Field from '../Field/Field.tsx';
 import Submit from '../Submit/Submit.tsx';
+import footer from '../../../global/assets/images/footer.svg';
 import React, {useRef} from "react";
 
 const Footer = () => {
@@ -25,8 +25,8 @@ const Footer = () => {
 
     return (
         <div className={styles.footerContainer} style={{backgroundColor: '#292D33'}}>
-            <img src={footer} alt="footer"/>
-            <form onSubmit={handleSubmit} className={styles.contactContainer}>
+            <img src={footer}/>
+            <form className={styles.contactContainer} onSubmit={handleSubmit} >
                 <div className={styles.contactText}>Contact Us!</div>
                 <Field ref={nameRef} fontSize={"24px"} text="Enter your name"/>
                 <Field ref={emailRef} fontSize={"24px"} text="Enter a valid email address"/>
