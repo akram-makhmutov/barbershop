@@ -33,3 +33,36 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .menu ul li {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .headerContainer {
+    padding: 0 200px;
+  }
+
+  .logo {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .menu ul li {
+    font-size: 24px;
+    padding: 12px 20px;
+  }
+}

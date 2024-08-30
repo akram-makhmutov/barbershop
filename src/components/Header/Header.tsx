@@ -1,11 +1,11 @@
 import styles from './Header.module.scss';
 import logo from '../../../global/assets/images/logo.svg';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className={styles.headerContainer}>
-            <img src={logo} alt="logo" className={styles.logo}/>
+            <img src={logo} className={styles.logo}/>
             <div className={styles.menu}>
                 <ul>
                     <li><Link to="/home">Home</Link></li>

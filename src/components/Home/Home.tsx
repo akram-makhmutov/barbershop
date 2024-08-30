@@ -17,15 +17,9 @@ const Home = ({mine_data}: Props) => {
         <div>
             <div className={styles.homeContainer}>
                 <div className={styles.leftBlock}>
-                    <div className={styles.welcome}>
-                        WELCOME TO
-                    </div>
-                    <div className={styles.barbershop}>
-                        Barbershop in <br/> Manhattan
-                    </div>
-                    <div className={styles.york}>
-                        NEW YORK
-                    </div>
+                    <div className={styles.welcome}>WELCOME TO</div>
+                    <div className={styles.barbershop}>Barbershop in <br/> Manhattan</div>
+                    <div className={styles.york}>NEW YORK</div>
                     <Contacts list={[contacts_1]}/>
                     <Contacts list={[contacts_2]}/>
                     <Contacts list={[contacts_3]}/>

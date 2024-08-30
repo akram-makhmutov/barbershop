@@ -1,3 +1,4 @@
+/* Base styles */
 .buttonBookOnline {
   margin-top: 26px;
   padding: 18px 32px;
@@ -75,4 +76,64 @@
 .submit {
   display: flex;
   justify-content: center;
+}
+
+/* Responsive styles for screen sizes below 768px */
+@media only screen and (max-width: 768px) {
+  .buttonBookOnline {
+    margin-top: 20px;
+    padding: 14px 24px;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+
+  .modalContent {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .closeModal img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .text {
+    font-size: 30px;
+    margin: 15px 0 20px 0;
+  }
+
+  .fields {
+    gap: 20px;
+  }
+}
+
+/* Responsive styles for screen sizes above 1500px */
+@media only screen and (min-width: 1500px) {
+  .buttonBookOnline {
+    margin-top: 30px;
+    padding: 20px 36px;
+    font-size: 34px;
+    border-radius: 16px;
+  }
+
+  .modalContent {
+    width: 50%;
+    height: 70%;
+    padding: 40px;
+  }
+
+  .closeModal img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .text {
+    font-size: 55px;
+    margin: 25px 0 35px 0;
+  }
+
+  .fields {
+    gap: 40px;
+  }
 }
