@@ -9,8 +9,9 @@ interface Props {
 const OneType = ({image, list}: Props) => {
     return (
         <div>
-            <img src={image} alt="image"/>
+
             <div className={styles.oneType}>
+                <img src={image}/>
                 {list && list.map((item, index) => (
                     <div key={index} className={styles.oneTypeText}>{item.name}
                         <More text={item.text}/>

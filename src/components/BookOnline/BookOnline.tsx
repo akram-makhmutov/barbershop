@@ -12,7 +12,7 @@ const BookOnline = () => {
 
     const switchModal = () => {
         setModal(!modal);
-    };
+    };+
 
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {

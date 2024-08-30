@@ -7,81 +7,177 @@
 
 .whyChooseUs {
   margin: 0px 120px;
+}
+
+.choose {
+  margin-top: 80px;
+  gap: 24px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.headerChoose {
+  font-size: 62px;
+  color: white;
+  font-family: Poppins-ExtraBold, sans-serif;
+}
+
+.paragraphChoose {
+  font-size: 24px;
+  line-height: 1.5;
+  color: white;
+  font-family: Poppins-SemiBold, sans-serif;
+}
+
+.listChoose {
+  font-size: 24px;
+  line-height: 3;
+  color: white;
+  font-family: Poppins-Light, sans-serif;
+}
+
+.listChoose ul li {
+  line-height: 1.8;
+  margin-left: 20px;
+  list-style: disc;
+  position: relative;
+}
+
+.listChoose ul li::before {
+  content: "";
+  display: block;
+  height: 20px;
+}
+
+.whiteBox {
+  margin-top: 80px;
+  right: 8vw;
+  width: 584px;
+  height: 684px;
+  border-radius: 32px;
+  gap: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.workingHours {
+  font-size: 50px;
+  color: #B5AF93;
+  font-family: Poppins-Bold, sans-serif;
+}
+
+.schedule ul li {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  letter-spacing: 6px;
+  line-height: 46px;
+  color: black;
+  font-family: Poppins-Light, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .chooseContainer {
+    width: 100vw;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .whyChooseUs {
+    margin: 0 20px;
+  }
 
   .choose {
-    margin-top: 80px;
-    gap: 24px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
+    margin-top: 40px;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+  }
 
-    .headerChoose {
-      font-size: 62px;
-      color: white;
-      font-family: Poppins-ExtraBold, sans-serif;
-    }
+  .headerChoose {
+    font-size: 36px;
+    margin-left: 50px;
+    text-align: center;
+  }
 
-    .paragraphChoose {
-      font-size: 24px;
-      line-height: 1.5;
-      color: white;
-      font-family: Poppins-SemiBold, sans-serif;
-    }
+  .paragraphChoose {
+    font-size: 18px;
+    margin-left: 70px;
 
-    .listChoose {
-      font-size: 24px;
-      line-height: 3;
-      color: white;
-      font-family: Poppins-Light, sans-serif;
+  }
 
-      ul li {
-        line-height: 1.8;
-        margin-left: 20px;
-        list-style: disc;
-        position: relative;
-
-        &::before {
-          content: "";
-          display: block;
-          height: 20px;
-        }
-      }
-    }
+  .listChoose {
+    font-size: 18px;
   }
 
   .whiteBox {
-    margin-top: 80px;
-    right: 8vw;
-    width: 584px;
-    height: 684px;
-    border-radius: 32px;
-    gap: 40px;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
+    width: 80vw;
+    height: auto;
+    right: 0;
+    margin-top: 20px;
+    padding: 20px;
+  }
 
+  .workingHours {
+    font-size: 28px;
+  }
 
-    .workingHours {
-      font-size: 50px;
-      color: #B5AF93;
-      font-family: Poppins-Bold, sans-serif;
-    }
+  .schedule ul li {
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 28px;
+  }
+}
 
-    .schedule {
-      ul li {
-        display: flex;
-        justify-content: center;
-        font-size: 28px;
-        letter-spacing: 6px;
-        line-height: 46px;
-        color: black;
-        font-family: Poppins-Light, sans-serif;
-      }
-    }
+@media only screen and (min-width: 1500px) {
+  .chooseContainer {
+    width: 1600px;
+    height: 900px;
+  }
+
+  .whyChooseUs {
+    margin: 0px 200px;
+  }
+
+  .choose {
+    margin-top: 100px;
+    gap: 32px;
+  }
+
+  .headerChoose {
+    font-size: 72px;
+  }
+
+  .paragraphChoose {
+    font-size: 28px;
+  }
+
+  .listChoose {
+    font-size: 28px;
+  }
+
+  .whiteBox {
+    width: 700px;
+    height: 800px;
+    border-radius: 40px;
+    gap: 48px;
+  }
+
+  .workingHours {
+    font-size: 56px;
+  }
+
+  .schedule ul li {
+    font-size: 32px;
+    letter-spacing: 8px;
+    line-height: 50px;
   }
 }
