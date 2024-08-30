@@ -88,7 +88,8 @@
     width: 100vw;
     height: auto;
     margin-top: 50px;
-    padding: 20px;
+    padding: 30px;
+    position: relative;
   }
 
   .whyChooseUs {
@@ -104,14 +105,14 @@
 
   .headerChoose {
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 0;
     text-align: center;
   }
 
   .paragraphChoose {
     font-size: 18px;
-    margin-left: 70px;
-
+    margin: 0 auto;
+    text-align: center;
   }
 
   .listChoose {
@@ -119,11 +120,13 @@
   }
 
   .whiteBox {
-    width: 80vw;
-    height: auto;
-    right: 0;
     margin-top: 20px;
     padding: 20px;
+    left: 18vw;
+    width: 55vw;
+    height: 60vw;
+    gap: 20px;
+    position: relative;
   }
 
   .workingHours {

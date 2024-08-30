@@ -23,7 +23,6 @@ const FewTypes = () => {
             <ButtonUp/>
         </div>
     )
-        ;
 }
 
 export default FewTypes;
