@@ -19,3 +19,17 @@
 .backToTopButtonHidden {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .backToTopButton img {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .backToTopButton img {
+    width: 3vw;
+    height: 3vw;
+  }
+}

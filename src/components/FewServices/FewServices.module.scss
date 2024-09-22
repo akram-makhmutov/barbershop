@@ -15,8 +15,7 @@
     font-family: Poppins-ExtraBold, sans-serif;
   }
 
-  .barbershopServices {
-
+  .barbershopImage {
     img {
       margin-left: 60px;
       width: 600px;
@@ -34,5 +33,64 @@
     position: relative;
     top: 1vw;
     left: 48vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .barbershopBlock {
+    width: auto;
+    height: 100vw;
+  }
+
+  .barbershopData {
+    margin-top: 0px;
+
+    .barbershopName {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .barbershopImage {
+      display: none;
+    }
+
+    .barbershopServicesData {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: static;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .barbershopBlock {
+    width: 1600px;
+    height: 1000px;
+  }
+
+  .barbershopData {
+    margin-top: 100px;
+  }
+
+  .barbershopName {
+    padding: 80px;
+    font-size: 80px;
+  }
+
+  .barbershopImage {
+    img {
+      margin-left: 80px;
+      width: 700px;
+      height: 800px;
+      border-radius: 60px;
+    }
+  }
+
+  .barbershopServicesData {
+    gap: 30px;
+    padding: 20px;
+    top: 2vw;
+    left: 50vw;
   }
 }

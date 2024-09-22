@@ -1,6 +1,54 @@
 .bestHaircut {
   width: 1440px;
   height: 1240px;
+
+  .bestHaircutText {
+    padding-top: 50px;
+    font-size: 70px;
+    line-height: 1.2;
+    text-align: center;
+    color: white;
+    font-family: Poppins-ExtraBold, sans-serif;
+  }
+
+  .bestHaircutImages {
+    margin-top: 50px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .bestHaircut {
+    width: auto;
+    height: 100vw;
+
+    .bestHaircutText {
+      padding-top: 50px;
+      font-size: 36px;
+    }
+
+    .bestHaircutImages {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .bestHaircut {
+    width: 1600px;
+    height: auto;
+
+    .bestHaircutText {
+      font-size: 80px;
+    }
+
+    .bestHaircutImages {
+      gap: 40px;
+    }
+  }
 }
 
 .bestHaircutText {

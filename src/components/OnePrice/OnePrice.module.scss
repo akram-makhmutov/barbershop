@@ -1,21 +1,21 @@
 .onePrice {
+  display: flex;
   margin-top: 80px;
   gap: 100px;
-  display: flex;
+}
 
-  .namePrice {
-    font-size: 36px;
-    color: black;
-    font-family: Poppins-ExtraLight, sans-serif;
-  }
+.namePrice {
+  font-size: 36px;
+  color: black;
+  font-family: Poppins-ExtraLight, sans-serif;
+}
 
-  .valuePrice {
-    margin-left: auto;
-    width: 58vw;
-    font-size: 36px;
-    color: #9D9570;
-    font-family: Poppins-Light, sans-serif;
-  }
+.valuePrice {
+  margin-left: auto;
+  width: 58vw;
+  font-size: 36px;
+  color: #9D9570;
+  font-family: Poppins-Light, sans-serif;
 }
 
 .linePrice {
@@ -24,45 +24,45 @@
   border-bottom: 1px solid #A7A7A7;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .onePrice {
-    flex-direction: column; /* Stack items vertically */
-    margin-top: 40px; /* Reduce margin */
-    gap: 20px; /* Reduce gap */
+    margin-top: 40px;
+    display: flex;
+    gap: 70px;
+  }
 
-    .namePrice {
-      font-size: 24px; /* Reduce font size */
-    }
+  .namePrice {
+    font-size: 16px;
+    white-space: nowrap;
+  }
 
-    .valuePrice {
-      width: 90vw; /* Make width responsive */
-      font-size: 24px; /* Reduce font size */
-    }
+  .valuePrice {
+    font-size: 18px;
   }
 
   .linePrice {
-    width: 90vw; /* Make width responsive */
-    margin-top: 10px; /* Reduce margin */
+    margin-top: 10px;
+    width: 300px;
   }
 }
 
-@media only screen and (min-width: 1500px) {
+@media (min-width: 1500px) {
   .onePrice {
-    margin-top: 120px; /* Increase margin */
-    gap: 150px; /* Increase gap */
+    gap: 150px;
+    margin-top: 100px;
+  }
 
-    .namePrice {
-      font-size: 48px; /* Increase font size */
-    }
+  .namePrice {
+    font-size: 40px;
+  }
 
-    .valuePrice {
-      width: 50vw; /* Adjust width */
-      font-size: 48px; /* Increase font size */
-    }
+  .valuePrice {
+    width: 50vw;
+    font-size: 40px;
   }
 
   .linePrice {
-    width: 800px; /* Increase width */
-    margin-top: 30px; /* Increase margin */
+    width: 680px;
+    margin-top: 25px;
   }
 }

@@ -24,3 +24,35 @@
     font-family: Poppins-ExtraBold, sans-serif;
   }
 }
+
+@media (max-width: 768px) {
+  .footerContainer {
+    align-items: center;
+
+    img {
+      height: 500px;
+      visibility: hidden;
+    }
+
+    .contactContainer {
+      left: 10px;
+      margin-top: 30px;
+      align-items: center;
+    }
+
+    .contactText {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .footerContainer img {
+    width: 600px;
+    height: 500px;
+  }
+
+  .contactContainer .contactText {
+    font-size: 60px;
+  }
+}

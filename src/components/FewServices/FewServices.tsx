@@ -13,20 +13,20 @@ const FewServices = () => {
     const service_3 = service_data[2];
     const service_4 = service_data[3];
     return (
-        <div className={styles.barbershopBlock} style={{backgroundColor: '#292D33'}}>
-            <div className={styles.barbershopData}>
-                <div className={styles.barbershopName}>Barbershop Services</div>
-                <div className={styles.barbershopServices}><img src={master} alt="master"/></div>
-                <div className={styles.barbershopServicesData}>
-                    <OneService image={haircut} list={[service_1]}/>
-                    <OneService image={shaver} list={[service_2]}/>
-                </div>
-                <div className={styles.barbershopServicesData}>
-                    <OneService image={trim} list={[service_3]}/>
-                    <OneService image={kids} list={[service_4]}/>
+            <div className={styles.barbershopBlock} style={{backgroundColor: '#292D33'}}>
+                <div className={styles.barbershopData}>
+                    <div className={styles.barbershopName}>Barbershop Services</div>
+                    <div className={styles.barbershopImage}><img src={master}/></div>
+                    <div className={styles.barbershopServicesData}>
+                        <OneService image={haircut} list={[service_1]}/>
+                        <OneService image={shaver} list={[service_2]}/>
+                    </div>
+                    <div className={styles.barbershopServicesData}>
+                        <OneService image={trim} list={[service_3]}/>
+                        <OneService image={kids} list={[service_4]}/>
+                    </div>
                 </div>
             </div>
-        </div>
     );
 }
 

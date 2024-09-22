@@ -31,7 +31,7 @@ const BestHaircutImage = ({masterImage}: Props) => {
             </div>
             {modal && (
                 <div className={styles.modal} onClick={switchModal} ref={modalRef}>
-                    <img className={styles.modalContent} src={masterImage}/>
+                    <div className={styles.master}><img className={styles.modalContent} src={masterImage}/></div>
                     <div className={styles.closeModal} onClick={switchModal}>
                         <img src={close}/>
                     </div>
