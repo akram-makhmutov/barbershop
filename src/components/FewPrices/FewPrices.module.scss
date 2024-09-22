@@ -30,13 +30,14 @@
 
   .columnPrices {
     margin-top: 10px;
-
   }
 
   .listPrices_1 {
+    position: absolute;
   }
 
   .listPrices_2 {
+    left: 270px !important;
     margin-bottom: 50px;
   }
 }
